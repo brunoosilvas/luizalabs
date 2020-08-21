@@ -1,0 +1,81 @@
+{
+   "ceps": [
+      {
+         "cep": "38035240",
+         "logradouro": "Rua Turmalina",
+         "complemento": "",
+         "bairro": "Lourdes",
+         "cidade": "Uberaba",
+         "uf": "Minas Gerais",
+         "unidade": "",
+         "ibge": "3170107",
+         "gia": ""
+      },
+      {
+         "cep": "38035230",
+         "logradouro": "Avenida Padre Eddie Bernardes Silva",
+         "complemento": "",
+         "bairro": "Lourdes",
+         "cidade": "Uberaba",
+         "uf": "Minas Gerais",
+         "unidade": "",
+         "ibge": "3170107",
+         "gia": ""
+      },
+      {
+         "cep": "38036230",
+         "logradouro": "Rua Cambuquira",
+         "complemento": "",
+         "bairro": "Jardim América",
+         "cidade": "Uberaba",
+         "uf": "Minas Gerais",
+         "unidade": "",
+         "ibge": "3170107",
+         "gia": ""
+      },
+      {
+         "cep": "38036210",
+         "logradouro": "Rua Guajajaras",
+         "complemento": "",
+         "bairro": "Jardim América",
+         "cidade": "Uberaba",
+         "uf": "Minas Gerais",
+         "unidade": "",
+         "ibge": "3170107",
+         "gia": ""
+      },
+      {
+         "cep": "38036200",
+         "logradouro": "Rua Guajajaras teste 1",
+         "complemento": "",
+         "bairro": "Jardim América",
+         "cidade": "Uberaba",
+         "uf": "Minas Gerais",
+         "unidade": "",
+         "ibge": "3170107",
+         "gia": ""
+      },
+      {
+         "cep": "38038000",
+         "logradouro": "Rua Guajajaras teste 2",
+         "complemento": "",
+         "bairro": "Jardim América",
+         "cidade": "Uberaba",
+         "uf": "Minas Gerais",
+         "unidade": "",
+         "ibge": "3170107",
+         "gia": ""
+      },
+      {
+         "cep": "38031210",
+         "logradouro": "Rua Alumínio",
+         "complemento": "de 847/848 ao fim",
+         "bairro": "Leblon",
+         "cidade": "Uberaba",
+         "uf": "Minas Gerais",
+         "unidade": "",
+         "ibge": "3170107",
+         "gia": ""
+      }
+   ]
+}

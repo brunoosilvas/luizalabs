@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+   api:
+      build: 
+         "./api"
+      container_name: api-luizalabs
+      ports: 
+         - "81:80"
+      restart: always
+   app:
+      build:
+         "./meu-cep"
+      container_name: app-luizalabs
+      ports: 
+         - "80:80"
+      depends_on: 
+         - api

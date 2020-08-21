@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API",
+  "scripts": {
+    "start": "npm test && node api.js",
+    "test": "mocha tests",
+    "dev": "nodemon --watch . api.js"    
+  },
+  "author": "Bruno Silva",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4"
+  }
+}

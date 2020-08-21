@@ -1,0 +1,95 @@
+
+<h2>Pesquisa de CEP</h2>
+
+<p-tabView>
+  <p-tabPanel header="Pesquisa">
+
+    <div class="p-formgroup-inline">
+      <div class="p-field">
+          <label for="firstname" class="p-sr-only">CEP</label>
+          <!-- <input id="firstname" type="text" pInputText placeholder="CEP"> -->
+          <p-inputMask [(ngModel)]="cep" mask="99999-999"></p-inputMask>
+      </div>
+      <!-- <button pButton type="button" (onClick)="find()" label="Pesquisar"></button> -->
+      <button pButton type="button" label="Pesquisar" (click)="find()"></button>
+    </div>
+
+    <p-messages [(value)]="msg"></p-messages>
+
+    <div class="p-fluid">
+
+      <p-panel header="Endereço">
+
+        <div *ngIf="data.cep && !isFindFirst">
+          <p-messages severity="warn">
+            <ng-template pTemplate>
+                <div class="p-ml-2">Com base em sua pesquisa encontramos o CEP <strong>{{data.cep}}</strong>, confirme se é realmente o seu endereço!</div>
+            </ng-template>
+          </p-messages>
+        </div>
+
+        <div class="p-mt-5"></div>
+
+        <div class="p-grid">
+          <div class="p-col-6 p-md-4 p-lg-2">
+            <span class="p-float-label">
+              <input id="float-input" type="text" pInputText [(ngModel)]="data.uf">
+              <label for="float-input">Estado</label>
+            </span>
+          </div>
+        </div>
+
+        <div class="p-mt-4"></div>
+
+        <div class="p-grid">
+          <div class="p-col-6 p-md-6 p-lg-4">
+            <span class="p-float-label">
+              <input id="float-input" type="text" pInputText [(ngModel)]="data.logradouro">
+              <label for="float-input">Logradouro</label>
+            </span>
+          </div>
+          <div class="p-col-6 p-md-6 p-lg-4">
+            <span class="p-float-label">
+              <input id="float-input" type="text" pInputText [(ngModel)]="data.bairro">
+              <label for="float-input">Bairro</label>
+            </span>
+          </div>
+        </div>
+
+        <div class="p-mt-4"></div>
+
+        <div class="p-grid">
+          <div class="p-col-12 p-md-6 p-lg-4">
+            <span class="p-float-label">
+              <input id="float-input" type="text" pInputText [(ngModel)]="data.cidade">
+              <label for="float-input">Cidade</label>
+            </span>
+          </div>
+        </div>
+      </p-panel>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Ceps">
+    <p-table [value]="values" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+      currentPageReportTemplate="{first} de {last} no total de {totalRecords}" [rowsPerPageOptions]="[10,25,50]">
+      <ng-template pTemplate="header">
+          <tr>
+              <th>CEP</th>
+              <th>Estado</th>
+              <th>Cidade</th>
+              <th>Bairro</th>
+              <th>Logradouro</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-cep>
+          <tr>
+              <td>{{cep.cep}}</td>
+              <td>{{cep.uf}}</td>
+              <td>{{cep.cidade}}</td>
+              <td>{{cep.bairro}}</td>
+              <td>{{cep.logradouro}}</td>
+          </tr>
+      </ng-template>
+  </p-table>
+  </p-tabPanel>
+</p-tabView>
