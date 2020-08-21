@@ -79,6 +79,8 @@ O processo é realizado da seguinte maneira:
    - Assim como na requisição o servidor também envia cabeçalhos de respostas
    - Por último a mensagem da resposta (html, imagem, pdf e etc)
 
+Então quando digitamos o endereço [https://www.netshoes.com.br](https://www.netshoes.com.br) na barra de endereços do navegador ele faz uma requisição para o servidor, que por sua vez atende os critérios dessa solicitação, respondendo o conteúdo solicitado.
+
 Podemos destacar algumas informações citadas acima, os metódos que são utilizados para a requisição e o código de status. Através dessas informações podemos direcionar o fluxo de nossas aplicações.
 
 Assim fechamos o ciclo de uma requisição e resposta utilizando o protocolo HTTP. Podemos considerar que o protocolo prioriza a semântica de seus recursos, e as applicações podem se beneficiar dos recursos disponíveis da especificação.
